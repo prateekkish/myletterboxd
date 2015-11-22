@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
   has_secure_password
-  validates :fname, :lname, :email , presence: true
+  validates :fname, :email, :password_digest , presence: true
 end
